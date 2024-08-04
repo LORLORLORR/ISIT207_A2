@@ -18,7 +18,7 @@ function handleLogin(event) {
     if (username === storedUsername && password === storedPassword) {
         localStorage.setItem('isLoggedIn', 'true'); // Save login state
         localStorage.setItem('username', username); // Save username
-        window.location.href = "Azoom HomePage.html"; // Redirect to home page on successful login
+        window.location.href = "index.html"; // Redirect to home page on successful login
     } else {
         alert('Invalid username or password');
     }
