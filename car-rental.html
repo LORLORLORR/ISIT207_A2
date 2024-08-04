@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="car-rental.css"> <!-- Link to your CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+    <script src="car-rental.js" defer></script>
+    <script src="home.js" defer></script>
+</head>
+<body>
+ <!-- Navbar -->
+ <nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="Azoom HomePage.html" class="nav-link">Home</a></li>
+        <li><a href="car-rental.html" class="nav-link">Car Rentals</a></li>
+        <li><a href="how-to-rent.html" class="nav-link">How to Rent</a></li>
+        <li class="logo"><a href="Azoom HomePage.html"><img src="images/Azoom Car Rental.png" alt="AZoom Car Rental Logo"></a></li>
+        <li><a href="locations.html" class="nav-link">Locations</a></li>
+        <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+        <li id="menu-login"><a href="login.html">Login</a></li> 
+        <li id="menu-logout" style="display: none;"><a href="logout.html">Logout</a></li> 
+    </ul>
+</nav>
+
+    <section class="car-cards" id="lightgallery">
+        <!-- Sedan -->
+        <div class="car-card sedan">
+            <a href="images/sedan.jpeg" data-sub-html="<h4>Sedan</h4><p>Comfortable and stylish sedans for everyday driving.</p>">
+                <img src="images/sedan.jpeg" alt="Sedan" class="car-image">
+            </a>
+            <div class="car-details">
+                <h2>Sedan</h2>
+                <p class="car-description">Comfortable and stylish sedans for everyday driving.</p>
+                <p class="car-rate">Rate: $40/day</p>
+            </div>
+        </div>
+        
+        <!-- SUV -->
+        <div class="car-card suv">
+            <a href="images/suv.jpeg" data-sub-html="<h4>SUV</h4><p>Spacious SUVs ideal for family trips and adventures.</p>">
+                <img src="images/suv.jpeg" alt="SUV" class="car-image">
+            </a>
+            <div class="car-details">
+                <h2>SUV</h2>
+                <p class="car-description">Spacious SUVs ideal for family trips and adventures.</p>
+                <p class="car-rate">Rate: $60/day</p>
+            </div>
+        </div>
+        
+        <!-- Convertible -->
+        <div class="car-card convertible">
+            <a href="images/convertible.jpeg" data-sub-html="<h4>Convertible</h4><p>Enjoy a thrilling ride with our stylish convertibles.</p>">
+                <img src="images/convertible.jpeg" alt="Convertible" class="car-image">
+            </a>
+            <div class="car-details">
+                <h2>Convertible</h2>
+                <p class="car-description">Enjoy a thrilling ride with our stylish convertibles.</p>
+                <p class="car-rate">Rate: $70/day</p>
+            </div>
+        </div>
+        
+        <!-- Electric -->
+        <div class="car-card electric">
+            <a href="images/electric.jpeg" data-sub-html="<h4>Electric</h4><p>Eco-friendly electric cars with impressive range.</p>">
+                <img src="images/electric.jpeg" alt="Electric" class="car-image">
+            </a>
+            <div class="car-details">
+                <h2>Electric</h2>
+                <p class="car-description">Eco-friendly electric cars with impressive range.</p>
+                <p class="car-rate">Rate: $50/day</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="rental-options">
+        <h2>Rental Options</h2>
+        <p>Select your rental duration and any additional options.</p>
+        <ul>
+            <li>Daily Rentals</li>
+            <li>Weekly Rentals</li>
+            <li>Monthly Rentals</li>
+            <li>Optional Add-Ons: GPS, Child Seats, Additional Drivers</li>
+        </ul>
+        <a href="reservation.html" class="btn btn-primary">Book Now</a>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/Azoom Car Rental.png" alt="Azoom Car Rental Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://whatsapp.com" target="_blank" class="fab fa-whatsapp"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2024 Azoom Car Rental. All rights reserved. | <a href="#privacy-policy">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
